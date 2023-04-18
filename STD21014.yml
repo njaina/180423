@@ -1,0 +1,11 @@
+Resources:
+  BucketName:
+    Type: AWS::S3::BucketS3
+    Properties:
+      BucketName: STD21014
+
+  BucketSSM:
+    Type: AWS::SSM:Parameter
+    Properties:
+      Name: STD21014
+      Value: ! GetAtt BucketName.Arn
