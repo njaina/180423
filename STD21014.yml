@@ -8,4 +8,4 @@ Resources:
     Type: AWS::SSM:Parameter
     Properties:
       Name: STD21014
-      Value: ! GetAtt BucketName.Arn
+      Value: !GetAtt BucketName.Arn
